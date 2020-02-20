@@ -10,9 +10,10 @@ constructor( a:string, b:string) {
 }
 datingtop(){
 	return ` 
-	<div class=""> 
-			<a>${this.image}</a>
-			<h2>${this.slogan}</h2>
+	<div class="col-sm-2 bg-dark"> 
+			<img src="${this.image}" class="rounded p-2 image" alt="Cinque Terre">
+			<h2 class="text-light">${this.slogan}</h2>
+			<button type="button" class="btn btn-outline-secondary m-2 ">match</button>
 
 	</div>
 	`
@@ -21,9 +22,11 @@ datingtop(){
 }
 
 
-let pleaseWork = new Dating("`<img src='spagetti-bolognese.jpg'>`", "möge das nudelmonster mit dir sein")
+let pleaseWork = new Dating("../Images/DarthMaul.jpg", "möge die macht mit dir sein")
 
-document.write(pleaseWork.datingtop());
+ document.getElementsByClassName("y")[0].innerHTML = (pleaseWork.datingtop());
+
+
 
 
 class Datinglike{
@@ -46,8 +49,8 @@ class Datinglike{
 
 	datingdown(){
 		return `
-		<div class= col-sm-5 bg-dark>
-	<img src="${this.image}" class="rounded m-2" alt="Cinque Terre">
+		<div class= col-sm-4 bg-dark border>
+		<img src="${this.image}" class="rounded " alt="Cinque Terre">
 
 	<p class=" row justify-content-start">Name: ${this.name}</p>
 	<p class=" row justify-content-start">Age: ${this.age}</p>
@@ -64,8 +67,9 @@ class Datinglike{
 
 
 
-let pleaseDateMe = new Datinglike("spagetti-bolognese.jpg", "Karl", 49, "Vienna", "sometimes", "nudelmonster");
+let pleaseDateMe = new Datinglike("../Images/DarthMaul.jpg", "Karl", 49, "Vienna", "sometimes", "nudelmonster");
 
 
 
-document.write(pleaseDateMe.datingdown());
+document.getElementsByClassName("upp")[0].innerHTML = (pleaseDateMe.datingdown());
+
