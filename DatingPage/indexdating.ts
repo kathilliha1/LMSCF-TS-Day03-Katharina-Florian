@@ -4,10 +4,12 @@ class Dating{
 	
 	image: string;
 	slogan: string;
+
 constructor( a:string, b:string) {
 	this.image = a;
 	this.slogan= b;
 }
+
 datingtop(){
 	return ` 
 	<div class="col-sm-2 bg-dark"> 
@@ -23,6 +25,21 @@ datingtop(){
 
 
 let pleaseWork = new Dating("../Images/DarthMaul.jpg", "möge die macht mit dir sein")
+
+let pleaseWork1 = new Dating("../Images/PrinzessinLea.jpg", "Chewbacca gib mir den Tucker")
+
+let pleaseWork2 = new Dating("../Images/DartVader.png", "Trust me I am a Jedi")
+
+let pleaseWork3 = new Dating("../Images/Padme.jpg", "alles offen und offen für alles")
+
+let pleaseWork4 = new Dating("../Images/JarJar.jpg", "You'd say, "boom de gasa".")
+
+let pleaseWork5 = new Dating("../Images/RaySkywalker.png", "let´s date or don´t, there is no try!")
+
+let pleaseWork6 = new Dating("../Images/Yoda.png", "Chlamydien du jetzt hast")
+
+let pleaseWork7 = new Dating("../Images/JynErso.jpg", "Icky, icky goo!")
+
 
  document.getElementsByClassName("y")[0].innerHTML = (pleaseWork.datingtop());
 
